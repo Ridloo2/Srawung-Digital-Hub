@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#123c35" />
+  <meta name="description" content="SRAWUNG DIGITAL HUB — ruang belajar, refleksi, dan penguatan remaja." />
+  <title>SRAWUNG DIGITAL HUB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" data-page="home">
+        <span class="brand-mark">S</span>
+        <span><b>SRAWUNG</b><small>DIGITAL HUB</small></span>
+      </a>
+      <div class="side-label">MENU UTAMA</div>
+      <nav class="nav-list" aria-label="Navigasi utama">
+        <button class="nav-item active" data-page="home"><span>⌂</span> Dashboard</button>
+        <button class="nav-item" data-page="sluman"><span>◉</span> SLUMAN <small>Kenali diri</small></button>
+        <button class="nav-item" data-page="slumun"><span>◇</span> SLUMUN <small>Bijak memilih</small></button>
+        <button class="nav-item" data-page="slamet"><span>♡</span> SLAMET <small>Saling menguatkan</small></button>
+        <button class="nav-item" data-page="hub"><span>▦</span> Digital Hub</button>
+        <button class="nav-item" data-page="evaluation"><span>◎</span> Evaluasi Program</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="support-mini">
+          <div class="support-icon">✦</div>
+          <b>Kamu tidak sendiri.</b>
+          <p>Berbagi cerita boleh, tetapi tidak harus. Kenyamananmu tetap utama.</p>
+          <button class="text-button" data-page="slamet">Lihat dukungan →</button>
+        </div>
+        <div class="sidebar-foot">Ruang aman untuk bertumbuh<br><span>© SRAWUNG-RESILIENCE</span></div>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu" id="menuToggle" aria-label="Buka menu">☰</button>
+        <div class="breadcrumb"><span>Ruang Pengembangan Diri</span><b>/</b><strong id="crumb">Dashboard</strong></div>
+        <div class="top-actions">
+          <span class="date-chip" id="todayLabel"></span>
+          <div class="avatar">SR</div>
+        </div>
+      </header>
+
+      <div class="content" id="appContent">
+        <!-- Rendered by app.js -->
+      </div>
+      <footer class="main-footer">
+        <span>SRAWUNG DIGITAL HUB</span>
+        <span>Kenali diri · Bijak memilih · Saling menguatkan</span>
+      </footer>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
